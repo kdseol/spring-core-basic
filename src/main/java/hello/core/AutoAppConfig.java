@@ -21,7 +21,7 @@ public class AutoAppConfig {
     // 빈 이름이 중복되어있을 경우 수동 빈 등록이 우선권을 가진다(수동 빈이 자동 빈을 오버라이딩 해버린다.)
     // 스프링부트가 다른 여러가지 예외 상황으로 인해 빈 이름이 중복일 경우 실행이 되지 않도록 기본설정되었다.
     // 만약 사용하려먼 properties에서 'spring.main.allow-bean-definition-overriding=true' 를 명시해 주어야 가능하다.
-    @Bean(name = "memoryMemberRepository")
+    //@Bean(name = "memoryMemberRepository")
     MemberRepository memberRepository() {
         return new MemoryMemberRepository();
     }
